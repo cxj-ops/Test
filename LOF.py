@@ -59,7 +59,7 @@ class LOF:
     centers:每一个簇的中心位置
     cluster_std:每一个簇内数据的生成标准差
     '''
-inliers, class_labels = make_blobs(n_samples=1500, n_features=2, centers=[[1, 2], [5, 3], [3, 10]],
+inliers, class_labels = make_blobs(n_samples=1500, n_features=2, centers=[[1, 1], [5, 2], [3, 10]],
                                        cluster_std=[0.25, 0.25, 0.3])
 outliers = np.array(
         [[2.2, 1.], [1.5, 2.5], [5., 4.], [0.5, 5.8], [5., 10.], [2., 7.8], [3., 6.], [3.1, 5.9], [2.9, 6.1], [3., 6.3],
